@@ -9,3 +9,4 @@ rsync_flags=(
 )
 
 sudo rsync "${rsync_flags[@]}" salt/ /srv/salt/
+sudo rsync "${rsync_flags[@]}" pillar/ /srv/pillar/
