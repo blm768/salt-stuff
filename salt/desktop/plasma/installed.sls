@@ -8,6 +8,7 @@ Install Plasma desktop:
     - pkgs:
       - plasma-desktop
       - sddm
+      - sddm-kcm
       - xorg-server
 
 Enable services:
