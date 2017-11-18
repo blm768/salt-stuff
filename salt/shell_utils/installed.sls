@@ -7,11 +7,17 @@ Install shell utilities:
     - pkgs:
       - git
       - openssh
+      - networkmanager
       - tmux
       - vim
       - wget
       - zsh
       - zsh-syntax-highlighting
+
+Enable NetworkManager:
+  service.running:
+    - name: NetworkManager
+    - enable: true
 
 # TODO: manage AUR packages?
 # (caps2esc)
