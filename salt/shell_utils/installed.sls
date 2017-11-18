@@ -6,6 +6,7 @@ Install shell utilities:
   pkg.installed:
     - pkgs:
       - git
+      - openssh
       - tmux
       - vim
       - wget

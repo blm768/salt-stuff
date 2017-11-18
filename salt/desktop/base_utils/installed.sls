@@ -1,4 +1,4 @@
-Install basic desktop utilities:
+Basic desktop utilities:
   pkg.installed:
     - pkgs:
       - firefox
