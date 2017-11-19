@@ -1,5 +1,4 @@
 base:
-  # TODO: include NetworkManager and sshd?
   '*':
     - shell_utils.installed
     {% if 'desktop' in pillar %}
@@ -11,3 +10,6 @@ base:
     - desktop.utils.installed
     {% endif %}
     {% endif %}
+  venonat:
+    - raspi.boot_configured
+    - syncthing.installed

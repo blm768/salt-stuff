@@ -1,0 +1,33 @@
+# See /boot/overlays/README for all available options
+
+#
+# Video settings
+#
+
+# Video mode
+# Use TV-style modes.
+hdmi_group=1
+# 1080i 60Hz
+# hdmi_mode=5
+# 720p 60Hz
+hdmi_mode=4
+
+overscan_left=-32
+overscan_right=-32
+overscan_top=-32
+overscan_bottom=-32
+
+# Enable the VC4 video driver
+# (may also require cma=128M in /boot/cmdline.txt)
+# gpu_mem=128 avoid_warnings=2 dtoverlay=vc4-kms-v3d
+gpu_mem=64
+
+#
+# Audio options
+#
+
+# Enable audio
+dtparam=audio=on
+# Force audio over HDMI
+# hdmi_drive=2
+
