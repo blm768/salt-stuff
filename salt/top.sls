@@ -10,6 +10,10 @@ base:
     - desktop.utils.installed
     {% endif %}
     {% endif %}
+  absol:
+    - desktop.nvidia_arch.configured
+  beldum:
+    - desktop.nvidia_arch.configured
   venonat:
     - raspi.boot_configured
     - syncthing.installed
