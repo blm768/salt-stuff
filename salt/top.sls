@@ -10,6 +10,9 @@ base:
     - desktop.utils.installed
     {% endif %}
     {% endif %}
+    {% if 'nftables' in pillar %}
+    - nftables.configured
+    {% endif %}
   absol:
     - desktop.nvidia_arch.configured
   beldum:

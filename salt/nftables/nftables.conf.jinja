@@ -1,0 +1,29 @@
+table inet filter {
+  chain input {
+    type filter hook input priority 0;
+
+    ct state {established, related} accept
+    ct state invalid drop
+    iifname lo accept
+    ip protocol icmp accept
+    ip6 nexthdr icmpv6 accept
+
+    {% if 'nftables' in pillar and 'tcp_ports' in pillar.nftables -%}
+    # TODO: pack multiple services into one line?
+    {% for port in pillar['nftables']['tcp_ports'] -%}
+    tcp dport {{ port }} accept
+    {%- endfor -%}
+    {%- else -%}
+    tcp dport ssh accept
+    {%- endif %}
+
+    reject with icmpx type port-unreachable
+  }
+  chain forward {
+    type filter hook forward priority 0;
+    drop
+  }
+  chain output {
+    type filter hook output priority 0;
+  }
+}
