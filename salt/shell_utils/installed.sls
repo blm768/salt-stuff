@@ -6,8 +6,8 @@ Install shell utilities:
   pkg.installed:
     - pkgs:
       - git
-      - openssh
       - networkmanager
+      - openssh
       - ripgrep
       - tmux
       - vim
