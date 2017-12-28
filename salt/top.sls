@@ -17,6 +17,7 @@ base:
     - desktop.nvidia_arch.configured
   beldum:
     - desktop.nvidia_arch.configured
+    - udevmon.configured
   venonat:
     - raspi.boot_configured
     - syncthing.installed
