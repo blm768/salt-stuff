@@ -8,6 +8,7 @@ Install shell utilities:
       - git
       - openssh
       - networkmanager
+      - ripgrep
       - tmux
       - vim
       - wget
@@ -18,6 +19,3 @@ Enable NetworkManager:
   service.running:
     - name: NetworkManager
     - enable: true
-
-# TODO: manage AUR packages?
-# (caps2esc)
