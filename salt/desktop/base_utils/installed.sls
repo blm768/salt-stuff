@@ -3,3 +3,9 @@ Basic desktop utilities:
     - pkgs:
       - firefox
       - keepass
+
+Fonts:
+  pkg.installed:
+    - pkgs:
+      - ttf-droid
+

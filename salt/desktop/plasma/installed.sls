@@ -6,10 +6,18 @@ Install libglvnd:
 Install Plasma desktop:
   pkg.installed:
     - pkgs:
+      - breeze-gtk
+      - kde-gtk-config
       - plasma-desktop
       - sddm
       - sddm-kcm
       - xorg-server
+
+Set up Redshift:
+  pkg.installed:
+    - pkgs:
+      - redshift
+      - plasma5-applets-redshift-control
 
 Enable services:
   service.enabled:

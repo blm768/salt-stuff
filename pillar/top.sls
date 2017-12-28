@@ -1,4 +1,6 @@
 base:
+  beldum:
+    - desktop
   rotom:
     - desktop
   venonat:
