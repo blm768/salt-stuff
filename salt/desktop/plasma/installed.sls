@@ -26,5 +26,6 @@ Enable services:
 Install Plasma-specific utilities:
   pkg.installed:
     - pkgs:
+      - kmix
       - networkmanager-qt
       - yakuake

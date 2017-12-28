@@ -1,6 +1,6 @@
 base:
   beldum:
-    - desktop
+    - desktop_full
   rotom:
     - desktop
   venonat:
