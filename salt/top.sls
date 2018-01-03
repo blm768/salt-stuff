@@ -3,6 +3,7 @@ base:
     - shell_utils.installed
     {% if 'desktop' in pillar %}
     {% if pillar['desktop']['environment'] == 'plasma' %}
+    - desktop.beep_disabled
     - desktop.plasma.installed
     {% endif %}
     - desktop.base_utils.installed
