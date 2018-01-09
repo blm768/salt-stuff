@@ -2,13 +2,13 @@ Install basic development tools:
   pkg.group_installed:
     - pkgs:
       - base-devel
-      - git
 
 Install shell utilities:
   pkg.installed:
     - pkgs:
       - dtach
       - dvtm
+      - git
       - openssh
       - ripgrep
       - rsync
