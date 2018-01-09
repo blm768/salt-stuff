@@ -7,18 +7,12 @@ Install basic development tools:
 Install shell utilities:
   pkg.installed:
     - pkgs:
+      - dtach
+      - dvtm
       - openssh
       - ripgrep
       - rsync
-      - tmux
       - vim
       - wget
       - zsh
       - zsh-syntax-highlighting
-
-Set up NetworkManager:
-  pkg.installed:
-    - name: networkmanager
-  service.running:
-    - name: NetworkManager
-    - enable: true
