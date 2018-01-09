@@ -27,6 +27,8 @@ Install Plasma-specific utilities:
   pkg.installed:
     - pkgs:
       - dolphin
+      - kdeconnect
       - kmix
       - networkmanager-qt
+      - okular
       - yakuake
