@@ -29,6 +29,6 @@ Install Plasma-specific utilities:
       - dolphin
       - kdeconnect
       - kmix
-      - networkmanager-qt
+      - plasma-nm
       - okular
       - yakuake
