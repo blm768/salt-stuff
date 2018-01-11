@@ -1,7 +1,6 @@
 Install basic development tools:
   pkg.group_installed:
-    - pkgs:
-      - base-devel
+    - name: base-devel
 
 Install shell utilities:
   pkg.installed:
