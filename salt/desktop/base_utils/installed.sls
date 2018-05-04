@@ -2,7 +2,7 @@ Install basic desktop utilities:
   pkg.installed:
     - pkgs:
       - firefox
-      - keepass
+      - keepassxc
 
 Install fonts:
   pkg.installed:

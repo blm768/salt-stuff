@@ -9,5 +9,4 @@ Additional desktop utilities:
 Install multimedia utilities:
   pkg.installed:
     - pkgs:
-      - amarok
       - cantata

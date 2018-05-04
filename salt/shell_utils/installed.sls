@@ -11,6 +11,7 @@ Install shell utilities:
       - openssh
       - ripgrep
       - rsync
+      - trash-cli
       - vim
       - wget
       - zsh
