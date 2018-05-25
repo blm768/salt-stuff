@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 rsync_flags=(
     --recursive --one-file-system

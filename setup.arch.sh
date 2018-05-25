@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Sets up Salt on an Arch Linux system
 
