@@ -13,7 +13,7 @@ Configure nftables:
 Run nftables:
   service.running:
     - name: nftables
-    - enabled: true
+    - enable: true
     - require:
       - file: /etc/nftables.conf
     - watch:
