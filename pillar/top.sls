@@ -5,3 +5,4 @@ base:
     - desktop
   venonat:
     - remote_access
+    - raspi

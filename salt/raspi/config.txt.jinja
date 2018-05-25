@@ -20,7 +20,7 @@ overscan_bottom=-32
 # Enable the VC4 video driver
 # (may also require cma=128M in /boot/cmdline.txt)
 # gpu_mem=128 avoid_warnings=2 dtoverlay=vc4-kms-v3d
-gpu_mem=64
+gpu_mem={{ pillar['raspi']['gpu_memory'] }}
 
 #
 # Audio options

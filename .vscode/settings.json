@@ -1,5 +1,8 @@
 {
     "files.associations": {
         "*.sls": "sls"
+    },
+    "[sls]": {
+        "editor.tabSize": 2
     }
 }
